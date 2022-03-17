@@ -1,0 +1,597 @@
+{
+	"info": {
+		"_postman_id": "ce07c5db-bd8a-43f3-88d8-164503ca60b9",
+		"name": "Weather api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SAPI",
+			"item": [
+				{
+					"name": "/fileContent",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "transactionId",
+								"value": "hjgjhmnjh@jyujbhj1234hnnkhjkutrhj",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer ya29.A0ARrdaM_6Vu5FBtstIs-OtX9NJktuPOao2p7i_N_ZbUup9kUouaGbMwKpEAaX-D4hgeV0MTrSgNlyfvcrlPZc-G2JUGpKa84MCBT_sJDN_nFJCe2QqY4CMCCLLCNUSozGmcJrnS7bReOKP07dNYerzOv5xoJOTQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/fileContent/1GSz5C3lWHS6FLHeA2GnxQlMnwdgCZHGz?alt=media",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"fileContent",
+								"1GSz5C3lWHS6FLHeA2GnxQlMnwdgCZHGz"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "media"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/fileList",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "https://www.googleapis.com/auth/drive.readonly",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "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",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "320376017606-fco7jbj7rnineoe1kbm2ta7icg1ptg59.apps.googleusercontent.com",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth2.googleapis.com/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://accounts.google.com/o/oauth2/auth",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://oauth.pstmn.io/v1/browser-callback",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "transactionId",
+								"value": "hjgjhmnjh@jyujbhj1234hnnkhjkutrhj",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer ya29.A0ARrdaM9tS0Lato6r5ROLefEryWL8mr8CfxBN3DmVNEgThVRm07mYIWvvakKCdZXqwv4pLZ_9dv0M24ET9tBo3hxC7rJDJNqSpLFf0vDtXzUYgWaia1zgDL4kq8ZjOU8TNtQwJ3WTf3alaG4vC78ykoz7OQ0APA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/fileList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"fileList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "weather",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/weather?postalCode=94043",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "postalCode",
+									"value": "94043"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postal",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ya29.A0ARrdaM8F-pypr6sLGCW_ILHFIIToSMdTiqes2Xy6kG9I5vFE6k3CX6nSCRhyqt6DYIGVB7AUBRfSqBPEJz25YXK2OD_-A5_7YmqRZCdq3bvSBRtqgNvjpTOqKmj_T_IJOZthBYwYknavFJdkDd8Y8645IRIHlb78RA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:8081/api/postal/8.8.8.8",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"postal",
+								"8.8.8.8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "External",
+			"item": [
+				{
+					"name": "weather",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Key",
+								"value": "45fcfe97d6d04ef5806205454221503",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://api.weatherapi.com/v1/forecast.json?q=94043&days=1",
+							"protocol": "http",
+							"host": [
+								"api",
+								"weatherapi",
+								"com"
+							],
+							"path": [
+								"v1",
+								"forecast.json"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "45fcfe97d6d04ef5806205454221503",
+									"disabled": true
+								},
+								{
+									"key": "q",
+									"value": "94043"
+								},
+								{
+									"key": "days",
+									"value": "1"
+								},
+								{
+									"key": "aqi",
+									"value": "no",
+									"disabled": true
+								},
+								{
+									"key": "alerts",
+									"value": "no",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PAPI",
+			"item": [
+				{
+					"name": "weather",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "https://www.googleapis.com/auth/drive.readonly",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "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",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "320376017606-fco7jbj7rnineoe1kbm2ta7icg1ptg59.apps.googleusercontent.com",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth2.googleapis.com/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://accounts.google.com/o/oauth2/auth",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://oauth.pstmn.io/v1/browser-callback",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ya29.A0ARrdaM_M5yfDHx3hXrKLG5Q7Lf2I_kq_G0ZQFhAIwkSTaCCNmhvuJ1sHYfQahKsdUPKgfjj0PmFGFp33pqKt7TnJ0ldw30PDkQzdug_gX9rlURg_OEpbtShq2f2kMOPcmcvSpxyWi1i7PTDQo5Ge9owQyd1JAQ",
+								"type": "text"
+							},
+							{
+								"key": "transactionId",
+								"value": "hjgjhmnjh@jyujbhj1234hnnkhjkutrhj",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:8082/api/weather/8.8.8.8",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"weather",
+								"8.8.8.8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "XPAPI",
+			"item": [
+				{
+					"name": "weather",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "https://www.googleapis.com/auth/drive.readonly",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "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",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "320376017606-fco7jbj7rnineoe1kbm2ta7icg1ptg59.apps.googleusercontent.com",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth2.googleapis.com/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://accounts.google.com/o/oauth2/auth",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://oauth.pstmn.io/v1/browser-callback",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+								"key": "Authorization",
+								"value": "Bearer ya29.A0ARrdaM85XittvhrPV-Tf0J6QpnKseiHCANgbAj07jTy2U27jHAmoIPmzLI6QhHNhupbfxBH-SF-5kFLQOuyyBBPIiPI2L26qyFzZMK35pMmrkNnxUGvi3Bw5jW_QGJI_3dti2h3F0ynHBS16bcXkmv32rzoEMQ",
+								"type": "text"
+							},
+							{
+								"key": "transactionId",
+								"value": "hjgjhmnjh@jyujbhj1234hnnkhjkutrhj",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8083/api/weather/8.8.8.8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"weather",
+								"8.8.8.8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "https://www.googleapis.com:443/drive/v3/files/18oLjXWurfoO-l_vkfbzwZIJDIFtNGn_m/watch",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "ya29.A0ARrdaM_ZcYZ71tyeWA7T7oIkjnN0wgcg4zFictXR5sRg-TBUQZbcyOAk-jTZ-Nodw2wqKZY4w6hydT5TZXdnuexuF_Czwh1jZCtolVB0HygZEud6sWfdM5r6tKmxvSK5GWyAUuqBi_k8gJ7c3oobcjg_sYQRfG7Glw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.googleapis.com:443/drive/v3/files/1sgaG0IT8qOO0hZIdTOGsYKbYzZvkf9FK?alt=media",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"drive",
+						"v3",
+						"files",
+						"1sgaG0IT8qOO0hZIdTOGsYKbYzZvkf9FK"
+					],
+					"query": [
+						{
+							"key": "alt",
+							"value": "media"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.googleapis.com:443/drive/v3/files/18oLjXWurfoO-l_vkfbzwZIJDIFtNGn_m/watch Copy",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/drive.readonly",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "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",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "320376017606-fco7jbj7rnineoe1kbm2ta7icg1ptg59.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth2.googleapis.com/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/auth",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://oauth.pstmn.io/v1/browser-callback",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ya29.A0ARrdaM_ZcYZ71tyeWA7T7oIkjnN0wgcg4zFictXR5sRg-TBUQZbcyOAk-jTZ-Nodw2wqKZY4w6hydT5TZXdnuexuF_Czwh1jZCtolVB0HygZEud6sWfdM5r6tKmxvSK5GWyAUuqBi_k8gJ7c3oobcjg_sYQRfG7Glw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.googleapis.com:443/drive/v3/files",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"drive",
+						"v3",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://anypoint.mulesoft.com/mocking/api/v1/links/879607b2-15cb-47f2-a29d-7d9f37f63c07/weather/{ipAddress}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "transactionId",
+						"value": "hjgjhmnjh@jyujbhj1234hnnkhjkutrhj",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer ya29.A0ARrdaM-4oao55cspa3d8di6awEIZma1-nXb7mClV58ryAGkfGYmNOdBgiHnHdzKk05aZh84Uc0hig5rq_U6jMq0aAz4G3CGja1abWcCQvojks0zSVtlF4LszDaNKsu1QJibZeK4TtNVfRJYkdKzJljYWhXjAHA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://anypoint.mulesoft.com/mocking/api/v1/links/879607b2-15cb-47f2-a29d-7d9f37f63c07/weather/{ipAddress}",
+					"protocol": "https",
+					"host": [
+						"anypoint",
+						"mulesoft",
+						"com"
+					],
+					"path": [
+						"mocking",
+						"api",
+						"v1",
+						"links",
+						"879607b2-15cb-47f2-a29d-7d9f37f63c07",
+						"weather",
+						"{ipAddress}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "clientSecret",
+				"value": "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",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "320376017606-fco7jbj7rnineoe1kbm2ta7icg1ptg59.apps.googleusercontent.com",
+				"type": "string"
+			},
+			{
+				"key": "redirect_uri",
+				"value": "https://oauth.pstmn.io/v1/browser-callback",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "https://www.googleapis.com/auth/drive.readonly",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://oauth2.googleapis.com/token",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://accounts.google.com/o/oauth2/auth",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
